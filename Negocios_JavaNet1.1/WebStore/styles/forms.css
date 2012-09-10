@@ -1,0 +1,27 @@
+/*
+HTML 5 Template Name: Elementary
+File: Forms CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+form, fieldset, legend{margin:0; padding:0; border:none;}
+
+legend{display:none;}
+
+input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Times,serif;}
+
+/* ----------------------------------------------Search Form-------------------------------------*/
+
+#topbar form{float:right; margin:0; padding:0;}
+#topbar form input{display:block; float:left; width:190px; height:20px; margin:0; padding:5px 5px 5px 10px; color:#C7CED6; background:url("../images/search_l.gif") 0 0 no-repeat #2C2C2C; border:none;}
+#topbar form input#search{width:35px; height:30px; margin:0; padding:0; cursor:pointer; background:none;}
+
+/* ----------------------------------------------Forms in Comment Area-------------------------------------*/
+
+#comments form{display:block; width:100%;}
+#comments form input{width:170px; padding:2px; border:1px solid #CCCCCC; margin:5px 5px 0 0;}
+#comments form textarea{width:98%; border:1px solid #CCCCCC; padding:2px; overflow:auto;}
+#comments form p{margin:5px 0;}
+#comments form #submit, #comments form #reset{margin:0; padding:5px; color:#666666; background-color:#F7F7F7; cursor:pointer;}

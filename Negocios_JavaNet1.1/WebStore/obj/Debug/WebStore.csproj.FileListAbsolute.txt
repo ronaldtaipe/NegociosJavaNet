@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\Proyecto Distribuidos\SD_Proyecto\Negocios_JavaNet1.1\WebStore\bin\WebStore.dll
+C:\Users\Administrator\Desktop\Proyecto Distribuidos\SD_Proyecto\Negocios_JavaNet1.1\WebStore\bin\WebStore.pdb
+C:\Users\Administrator\Desktop\Proyecto Distribuidos\SD_Proyecto\Negocios_JavaNet1.1\WebStore\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Proyecto Distribuidos\SD_Proyecto\Negocios_JavaNet1.1\WebStore\obj\Debug\WebStore.dll
+C:\Users\Administrator\Desktop\Proyecto Distribuidos\SD_Proyecto\Negocios_JavaNet1.1\WebStore\obj\Debug\WebStore.pdb
+C:\Distribuidos\Negocios_JavaNet1.1\WebStore\bin\WebStore.dll
+C:\Distribuidos\Negocios_JavaNet1.1\WebStore\bin\WebStore.pdb
+C:\Distribuidos\Negocios_JavaNet1.1\WebStore\obj\Debug\ResolveAssemblyReference.cache
+C:\Distribuidos\Negocios_JavaNet1.1\WebStore\obj\Debug\WebStore.dll
+C:\Distribuidos\Negocios_JavaNet1.1\WebStore\obj\Debug\WebStore.pdb
