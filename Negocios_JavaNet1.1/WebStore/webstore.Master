@@ -21,13 +21,15 @@
         <div class="wrapper row1">
           <header id="header" class="clear">
             <hgroup>
-              <h1><a href="#">WebStore</a></h1>
-              <h2>JavaNet</h2>
+            <h2><a href="index.aspx">WebStore</a></h2>
+            <h2>JavaNet</h2>
             </hgroup>
             <nav>
               <ul>
-                <li class="last"><a href="#">Proveedores</a><span>Proveedores</span></li>
-                <li><a href="#">Kits</a><span>Kits</span></li>
+             <li><a href="Login.aspx">Ingresar</a><span>Ingresar</span></li>
+              <li><a href="RegistrarCliente.aspx">Registrate</a><span>Registrate</span></li>
+              <li><a href="Proveedores.aspx">Proveedores</a><span>Proveedores</span></li>
+                <li><a href="Kits.aspx">Kits</a><span>Kits</span></li>
                 <li><a href="#">Productos Nuevos</a><span>Productos Nuevos</span>
                   <ul>
                     <li><a href="#">Cómputo</a></li>
@@ -35,10 +37,10 @@
                     <li><a href="#">Muebles de Oficina</a></li>
                   </ul>
                 </li>
-                <li><a href="#">Ofertas</a><span>Ofertas</span></li>
-                <li><a href="#">Marcas</a><span>Marcas</span></li>
-                <li class="active"><a href="index.aspx">Catálogo de Productos</a><span>Catálogo de Productos</span></li>
-              </ul>
+                <li><a href="Ofertas.aspx">Ofertas</a><span>Ofertas</span></li>
+                <li><a href="Marcas.aspx">Marcas</a><span>Marcas</span></li>
+                <li class="active"><a href="Catalogo.aspx">Catálogo</a><span>Catálogo</span></li>                
+                </ul>
             </nav>
           </header>
         </div>
@@ -47,7 +49,8 @@
         </div>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-
+                
+        
             </asp:ContentPlaceHolder>
         </div>
       <!------------------ Footer de la página  ---------------->

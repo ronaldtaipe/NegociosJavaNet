@@ -8,3 +8,8 @@ C:\Distribuidos\Negocios_JavaNet1.1\WebStore\bin\WebStore.pdb
 C:\Distribuidos\Negocios_JavaNet1.1\WebStore\obj\Debug\ResolveAssemblyReference.cache
 C:\Distribuidos\Negocios_JavaNet1.1\WebStore\obj\Debug\WebStore.dll
 C:\Distribuidos\Negocios_JavaNet1.1\WebStore\obj\Debug\WebStore.pdb
+C:\Users\PIER\Documents\GitHub\NegociosJavaNet\Negocios_JavaNet1.1\WebStore\bin\WebStore.dll
+C:\Users\PIER\Documents\GitHub\NegociosJavaNet\Negocios_JavaNet1.1\WebStore\bin\WebStore.pdb
+C:\Users\PIER\Documents\GitHub\NegociosJavaNet\Negocios_JavaNet1.1\WebStore\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\PIER\Documents\GitHub\NegociosJavaNet\Negocios_JavaNet1.1\WebStore\obj\Debug\WebStore.dll
+C:\Users\PIER\Documents\GitHub\NegociosJavaNet\Negocios_JavaNet1.1\WebStore\obj\Debug\WebStore.pdb
