@@ -26,7 +26,9 @@
           <tr>
             <th><label for="nombres"><small>Nombres</small></label></th>
             <th><asp:TextBox ID="txtNombres" runat="server" Width="353px"></asp:TextBox></th>
-            <th></th>
+            <th>
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+              </th>
           </tr>
           <tr>
             <th><label for="apellidos"><small>Apellidos</small></label></th>

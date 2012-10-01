@@ -13,7 +13,14 @@
 
 	<jaxws:endpoint id="personaServiceEndpoint" implementor="#personaService"
 		address="/PersonaService" />
+		
 
 
-
+<!-- 
+"src/main/java/pe/reniec/webpersona/service/PersonaService.java"
+	<jaxws:client id="notaServiceClient" serviceName="NotaServiceImpl"  
+	serviceClass="com.mycompany.calculonotas.service.NotaService" 
+    address="http://localhost:8080/calculonotas/NotaService"/>
+    //http://localhost:8080/webPersona/PersonaService
+ -->
 </beans>

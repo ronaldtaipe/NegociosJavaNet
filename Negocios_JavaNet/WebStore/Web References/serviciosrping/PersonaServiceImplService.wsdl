@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://service.webpersona.reniec.pe/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="PersonaServiceImplService" targetNamespace="http://service.webpersona.reniec.pe/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="unqualified" targetNamespace="http://service.webpersona.reniec.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="validaPersona" type="tns:validaPersona" />
+      <xs:element name="validaPersonaInfo" type="tns:validaPersonaInfo" />
+      <xs:element name="validaPersonaInfoResponse" type="tns:validaPersonaInfoResponse" />
+      <xs:element name="validaPersonaResponse" type="tns:validaPersonaResponse" />
+      <xs:complexType name="validaPersonaInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="dni" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="validaPersonaInfoResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:persona" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="persona">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="apellidos" type="xs:string" />
+          <xs:element minOccurs="0" name="direccion" type="xs:string" />
+          <xs:element minOccurs="0" name="dni" type="xs:string" />
+          <xs:element name="estado" type="xs:int" />
+          <xs:element minOccurs="0" name="nombres" type="xs:string" />
+          <xs:element minOccurs="0" name="telefono" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="abstractCollection" abstract="true">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="abstractList" abstract="true">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:abstractCollection">
+            <xs:sequence />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="arrayList">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:abstractList">
+            <xs:sequence />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="validaPersona">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="dni" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="validaPersonaResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="validaPersonaInfoResponse">
+    <wsdl:part name="parameters" element="tns:validaPersonaInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="validaPersonaResponse">
+    <wsdl:part name="parameters" element="tns:validaPersonaResponse" />
+  </wsdl:message>
+  <wsdl:message name="validaPersonaInfo">
+    <wsdl:part name="parameters" element="tns:validaPersonaInfo" />
+  </wsdl:message>
+  <wsdl:message name="validaPersona">
+    <wsdl:part name="parameters" element="tns:validaPersona" />
+  </wsdl:message>
+  <wsdl:portType name="PersonaService">
+    <wsdl:operation name="validaPersonaInfo">
+      <wsdl:input name="validaPersonaInfo" message="tns:validaPersonaInfo" />
+      <wsdl:output name="validaPersonaInfoResponse" message="tns:validaPersonaInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="validaPersona">
+      <wsdl:input name="validaPersona" message="tns:validaPersona" />
+      <wsdl:output name="validaPersonaResponse" message="tns:validaPersonaResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PersonaServiceImplServiceSoapBinding" type="tns:PersonaService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="validaPersonaInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="validaPersonaInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="validaPersonaInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="validaPersona">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="validaPersona">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="validaPersonaResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PersonaServiceImplService">
+    <wsdl:port name="PersonaServiceImplPort" binding="tns:PersonaServiceImplServiceSoapBinding">
+      <soap:address location="http://localhost:8080/webPersona/PersonaService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
