@@ -33,9 +33,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
-    <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
@@ -43,7 +43,6 @@
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
@@ -183,7 +182,7 @@
     <Compile Include="RegistrarCliente.aspx.designer.cs">
       <DependentUpon>RegistrarCliente.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Web References\validapersona\Reference.cs">
+    <Compile Include="Web References\serviciosrping\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
@@ -204,8 +203,8 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Web References\validapersona\PersonaServiceImplService.wsdl" />
-    <None Include="Web References\validapersona\Reference.map">
+    <None Include="Web References\serviciosrping\PersonaServiceImplService.wsdl" />
+    <None Include="Web References\serviciosrping\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -214,16 +213,16 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferenceUrl Include="http://localhost:28080/webPersona/PersonaService%3fwsdl">
+    <WebReferenceUrl Include="http://localhost:8080/webPersona/PersonaService%3fwsdl">
       <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\validapersona\</RelPath>
-      <UpdateFromURL>http://localhost:28080/webPersona/PersonaService%3fwsdl</UpdateFromURL>
+      <RelPath>Web References\serviciosrping\</RelPath>
+      <UpdateFromURL>http://localhost:8080/webPersona/PersonaService%3fwsdl</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>WebStore_validapersona_PersonaServiceImplService</CachedSettingsPropName>
+      <CachedSettingsPropName>WebStore_serviciosrping_PersonaServiceImplService</CachedSettingsPropName>
     </WebReferenceUrl>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
