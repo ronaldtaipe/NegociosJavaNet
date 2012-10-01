@@ -28,3 +28,8 @@ C:\Users\alumnos\Downloads\ProyectosUPC\ProyectosUPC\Negocios_JavaNet1.1\WebStor
 C:\Users\alumnos\Downloads\ProyectosUPC\ProyectosUPC\Negocios_JavaNet1.1\WebStore\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\alumnos\Downloads\ProyectosUPC\ProyectosUPC\Negocios_JavaNet1.1\WebStore\obj\Debug\WebStore.dll
 C:\Users\alumnos\Downloads\ProyectosUPC\ProyectosUPC\Negocios_JavaNet1.1\WebStore\obj\Debug\WebStore.pdb
+C:\Users\PIER\Documents\GitHub\NegociosJavaNet\Negocios_JavaNet\WebStore\bin\WebStore.dll
+C:\Users\PIER\Documents\GitHub\NegociosJavaNet\Negocios_JavaNet\WebStore\bin\WebStore.pdb
+C:\Users\PIER\Documents\GitHub\NegociosJavaNet\Negocios_JavaNet\WebStore\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\PIER\Documents\GitHub\NegociosJavaNet\Negocios_JavaNet\WebStore\obj\Debug\WebStore.dll
+C:\Users\PIER\Documents\GitHub\NegociosJavaNet\Negocios_JavaNet\WebStore\obj\Debug\WebStore.pdb

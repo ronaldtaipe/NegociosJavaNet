@@ -2,8 +2,8 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WebStore.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="WebStore_validapersona_PersonaServiceImplService" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://localhost:28080/webPersona/PersonaService</Value>
+    <Setting Name="WebStore_serviciosrping_PersonaServiceImplService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8080/webPersona/PersonaService</Value>
     </Setting>
   </Settings>
 </SettingsFile>
