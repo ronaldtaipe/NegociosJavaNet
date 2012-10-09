@@ -33,3 +33,8 @@ C:\Users\PIER\Documents\GitHub\NegociosJavaNet\Negocios_JavaNet\WebStore\bin\Web
 C:\Users\PIER\Documents\GitHub\NegociosJavaNet\Negocios_JavaNet\WebStore\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\PIER\Documents\GitHub\NegociosJavaNet\Negocios_JavaNet\WebStore\obj\Debug\WebStore.dll
 C:\Users\PIER\Documents\GitHub\NegociosJavaNet\Negocios_JavaNet\WebStore\obj\Debug\WebStore.pdb
+C:\SWSetup\Init\Net\NegociosJavaNet\Negocios_JavaNet\WebStore\obj\Debug\ResolveAssemblyReference.cache
+C:\SWSetup\Init\Net\NegociosJavaNet\Negocios_JavaNet\WebStore\obj\Debug\WebStore.dll
+C:\SWSetup\Init\Net\NegociosJavaNet\Negocios_JavaNet\WebStore\bin\WebStore.dll
+C:\SWSetup\Init\Net\NegociosJavaNet\Negocios_JavaNet\WebStore\bin\WebStore.pdb
+C:\SWSetup\Init\Net\NegociosJavaNet\Negocios_JavaNet\WebStore\obj\Debug\WebStore.pdb

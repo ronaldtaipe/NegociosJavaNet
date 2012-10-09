@@ -49,61 +49,61 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Catalogo.aspx" />
-    <Content Include="controles-estilo.aspx" />
-    <Content Include="images\articulos\1.jpg" />
-    <Content Include="images\articulos\2.jpg" />
-    <Content Include="images\articulos\4.jpg" />
-    <Content Include="images\black_file.gif" />
-    <Content Include="images\demo\32x32.gif" />
-    <Content Include="images\demo\80x80.gif" />
-    <Content Include="images\demo\940x360.gif" />
-    <Content Include="images\demo\avatar.gif" />
-    <Content Include="images\demo\imgl.gif" />
-    <Content Include="images\demo\imgr.gif" />
-    <Content Include="images\featured_slide_trans.png" />
-    <Content Include="images\form_input_long.gif" />
-    <Content Include="images\orange_file.gif" />
-    <Content Include="images\round_bot.gif" />
-    <Content Include="images\round_top.gif" />
-    <Content Include="images\search.gif" />
-    <Content Include="images\search_l.gif" />
-    <Content Include="images\slider\arrow-next.png" />
-    <Content Include="images\slider\arrow-prev.png" />
-    <Content Include="images\slider\frame.png" />
-    <Content Include="images\slider\loading.gif" />
-    <Content Include="images\slider\ORIGINAL FRAME.png" />
-    <Content Include="images\slider\principal\1.jpg" />
-    <Content Include="images\slider\principal\2.jpg" />
-    <Content Include="images\slider\principal\3.jpg" />
-    <Content Include="images\slider\principal\4.jpg" />
-    <Content Include="images\slider\principal\5.jpg" />
-    <Content Include="images\slider\principal\6.jpg" />
-    <Content Include="images\slider\sliderpagination.png" />
-    <Content Include="images\slider\sliderpagination_bg.png" />
-    <Content Include="images\social-sprite.gif" />
-    <Content Include="images\twitter_bg.gif" />
-    <Content Include="images\twitter_logo.gif" />
-    <Content Include="index.aspx" />
-    <Content Include="Kits.aspx" />
-    <Content Include="Login.aspx" />
-    <Content Include="Marcas.aspx" />
-    <Content Include="Ofertas.aspx" />
-    <Content Include="Proveedores.aspx" />
-    <Content Include="RegistrarCliente.aspx" />
-    <Content Include="scripts\html5shiv.js" />
-    <Content Include="scripts\jquery-prettyPhoto.js" />
-    <Content Include="scripts\jquery.1.5.1.min.js" />
-    <Content Include="scripts\jquery.tabs.setup.js" />
-    <Content Include="scripts\slide.js" />
-    <Content Include="scripts\slides.min.jquery.js" />
-    <Content Include="styles\forms.css" />
-    <Content Include="styles\homepage.css" />
-    <Content Include="styles\index.html" />
-    <Content Include="styles\layout.css" />
-    <Content Include="styles\navi.css" />
-    <Content Include="styles\slider.css" />
-    <Content Include="styles\tables.css" />
+    <Content Include="Presentacion\Catalogo.aspx" />
+    <Content Include="Presentacion\controles-estilo.aspx" />
+    <Content Include="Presentacion\images\articulos\1.jpg" />
+    <Content Include="Presentacion\images\articulos\2.jpg" />
+    <Content Include="Presentacion\images\articulos\4.jpg" />
+    <Content Include="Presentacion\images\black_file.gif" />
+    <Content Include="Presentacion\images\demo\32x32.gif" />
+    <Content Include="Presentacion\images\demo\80x80.gif" />
+    <Content Include="Presentacion\images\demo\940x360.gif" />
+    <Content Include="Presentacion\images\demo\avatar.gif" />
+    <Content Include="Presentacion\images\demo\imgl.gif" />
+    <Content Include="Presentacion\images\demo\imgr.gif" />
+    <Content Include="Presentacion\images\featured_slide_trans.png" />
+    <Content Include="Presentacion\images\form_input_long.gif" />
+    <Content Include="Presentacion\images\orange_file.gif" />
+    <Content Include="Presentacion\images\round_bot.gif" />
+    <Content Include="Presentacion\images\round_top.gif" />
+    <Content Include="Presentacion\images\search.gif" />
+    <Content Include="Presentacion\images\search_l.gif" />
+    <Content Include="Presentacion\images\slider\arrow-next.png" />
+    <Content Include="Presentacion\images\slider\arrow-prev.png" />
+    <Content Include="Presentacion\images\slider\frame.png" />
+    <Content Include="Presentacion\images\slider\loading.gif" />
+    <Content Include="Presentacion\images\slider\ORIGINAL FRAME.png" />
+    <Content Include="Presentacion\images\slider\principal\1.jpg" />
+    <Content Include="Presentacion\images\slider\principal\2.jpg" />
+    <Content Include="Presentacion\images\slider\principal\3.jpg" />
+    <Content Include="Presentacion\images\slider\principal\4.jpg" />
+    <Content Include="Presentacion\images\slider\principal\5.jpg" />
+    <Content Include="Presentacion\images\slider\principal\6.jpg" />
+    <Content Include="Presentacion\images\slider\sliderpagination.png" />
+    <Content Include="Presentacion\images\slider\sliderpagination_bg.png" />
+    <Content Include="Presentacion\images\social-sprite.gif" />
+    <Content Include="Presentacion\images\twitter_bg.gif" />
+    <Content Include="Presentacion\images\twitter_logo.gif" />
+    <Content Include="Presentacion\index.aspx" />
+    <Content Include="Presentacion\Kits.aspx" />
+    <Content Include="Presentacion\Login.aspx" />
+    <Content Include="Presentacion\Marcas.aspx" />
+    <Content Include="Presentacion\Ofertas.aspx" />
+    <Content Include="Presentacion\Proveedores.aspx" />
+    <Content Include="Presentacion\RegistrarCliente.aspx" />
+    <Content Include="Presentacion\scripts\html5shiv.js" />
+    <Content Include="Presentacion\scripts\jquery-prettyPhoto.js" />
+    <Content Include="Presentacion\scripts\jquery.1.5.1.min.js" />
+    <Content Include="Presentacion\scripts\jquery.tabs.setup.js" />
+    <Content Include="Presentacion\scripts\slide.js" />
+    <Content Include="Presentacion\scripts\slides.min.jquery.js" />
+    <Content Include="Presentacion\styles\forms.css" />
+    <Content Include="Presentacion\styles\homepage.css" />
+    <Content Include="Presentacion\styles\index.html" />
+    <Content Include="Presentacion\styles\layout.css" />
+    <Content Include="Presentacion\styles\navi.css" />
+    <Content Include="Presentacion\styles\slider.css" />
+    <Content Include="Presentacion\styles\tables.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -113,53 +113,56 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Catalogo.aspx.cs">
+    <Compile Include="Datos\ClienteDao.cs" />
+    <Compile Include="Entidades\Cliente.cs" />
+    <Compile Include="Negocio\ClienteBE.cs" />
+    <Compile Include="Presentacion\Catalogo.aspx.cs">
       <DependentUpon>Catalogo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Catalogo.aspx.designer.cs">
+    <Compile Include="Presentacion\Catalogo.aspx.designer.cs">
       <DependentUpon>Catalogo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="controles-estilo.aspx.cs">
+    <Compile Include="Presentacion\controles-estilo.aspx.cs">
       <DependentUpon>controles-estilo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="controles-estilo.aspx.designer.cs">
+    <Compile Include="Presentacion\controles-estilo.aspx.designer.cs">
       <DependentUpon>controles-estilo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="index.aspx.cs">
+    <Compile Include="Presentacion\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="index.aspx.designer.cs">
+    <Compile Include="Presentacion\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Kits.aspx.cs">
+    <Compile Include="Presentacion\Kits.aspx.cs">
       <DependentUpon>Kits.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Kits.aspx.designer.cs">
+    <Compile Include="Presentacion\Kits.aspx.designer.cs">
       <DependentUpon>Kits.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
+    <Compile Include="Presentacion\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
+    <Compile Include="Presentacion\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Marcas.aspx.cs">
+    <Compile Include="Presentacion\Marcas.aspx.cs">
       <DependentUpon>Marcas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Marcas.aspx.designer.cs">
+    <Compile Include="Presentacion\Marcas.aspx.designer.cs">
       <DependentUpon>Marcas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Ofertas.aspx.cs">
+    <Compile Include="Presentacion\Ofertas.aspx.cs">
       <DependentUpon>Ofertas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Ofertas.aspx.designer.cs">
+    <Compile Include="Presentacion\Ofertas.aspx.designer.cs">
       <DependentUpon>Ofertas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -168,18 +171,18 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Proveedores.aspx.cs">
+    <Compile Include="Presentacion\Proveedores.aspx.cs">
       <DependentUpon>Proveedores.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Proveedores.aspx.designer.cs">
+    <Compile Include="Presentacion\Proveedores.aspx.designer.cs">
       <DependentUpon>Proveedores.aspx</DependentUpon>
     </Compile>
-    <Compile Include="RegistrarCliente.aspx.cs">
+    <Compile Include="Presentacion\RegistrarCliente.aspx.cs">
       <DependentUpon>RegistrarCliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RegistrarCliente.aspx.designer.cs">
+    <Compile Include="Presentacion\RegistrarCliente.aspx.designer.cs">
       <DependentUpon>RegistrarCliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Web References\serviciosrping\Reference.cs">
@@ -187,16 +190,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
-    <Compile Include="webstore.Master.cs">
+    <Compile Include="Presentacion\webstore.Master.cs">
       <DependentUpon>webstore.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="webstore.Master.designer.cs">
+    <Compile Include="Presentacion\webstore.Master.designer.cs">
       <DependentUpon>webstore.Master</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="webstore.Master" />
+    <Content Include="Presentacion\webstore.Master" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\Settings.settings">
@@ -225,6 +228,7 @@
       <CachedSettingsPropName>WebStore_serviciosrping_PersonaServiceImplService</CachedSettingsPropName>
     </WebReferenceUrl>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>

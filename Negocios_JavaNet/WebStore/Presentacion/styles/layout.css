@@ -1,0 +1,129 @@
+/*
+HTML 5 Template Name: Elementary
+File: Layout CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+@import url(navi.css);
+@import url(forms.css);
+@import url(tables.css);
+@import url(slider.css);
+@import url(homepage.css);
+
+html{overflow-y:scroll;}
+
+body{margin:0; padding:0; font-size:13px; font-family:PT Sans, Arial; color:#FFFFFF; background-color:#1E1E1E;}
+
+img{border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    padding: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.justify{text-align:justify;}
+.bold{font-weight:bold;}
+.center{text-align:center;}
+.right{text-align:right;}
+.nostart{margin:0; padding:0; list-style:none;}
+.hidden{display:none;}
+
+.clear:after{content:"."; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
+.clear{display:inline-block;}
+html[xmlns] .clear{display:block;}
+* html .clear{height:1%;}
+
+a{outline:none; text-decoration:none;}
+
+.fl_left{float:left;}
+.fl_right{float:right;}
+
+.imgholder, .imgl, .imgr{padding:4px; border:1px solid #DEDACB; text-align:center;}
+.imgl{float:left; margin:0 15px 15px 0; clear:left;}
+.imgr{float:right; margin:0 0 15px 15px; clear:right;}
+.imgl img, .imgr img{float:inherit;}
+
+/*----------------------------------------------HTML 5 Overrides-------------------------------------*/
+
+address, article, aside, figcaption, figure, footer, header, hgroup, nav, section{display:block; margin:0; padding:0;}
+
+/* ----------------------------------------------Wrapper-------------------------------------*/
+
+div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
+
+.row0, .row0 a{color:#676767; background-color:#191919;}
+.row0{border-top:10px solid #FF9900;}
+.row1, .row1 a{color:#C0BAB6; background-color:#333333;}
+.row2{color:#979797; background-color:#FFFFFF;}
+.row2 a{color:#FF9900; background-color:#FFFFFF;}
+.row3, .row3 a{color:#FFFFFF; background-color:#1E1E1E;}
+
+/*----------------------------------------------Generalise-------------------------------------*/
+
+#topbar, #header, #container, #footer{display:block; margin:0 auto; width:960px;}
+
+/*h1, */
+h2, h3, h4, h5, h6{margin:0; padding:0; font-size:20px; font-weight:normal; font-style:normal; line-height:normal;}
+
+address{font-style:normal;}
+
+blockquote, q{display:block; padding:8px 10px; color:#979797; background-color:#ECECEC; font-style:italic; line-height:normal;}
+blockquote:before, q:before{content:'“ '; font-size:26px;}
+blockquote:after, q:after{content:' „'; font-size:26px; line-height:0;}
+
+/*----------------------------------------------Top Bar-------------------------------------*/
+
+#topbar{padding:15px 0; line-height:normal;}
+#topbar time{float:left; margin:8px 0 0 0; padding:0;}
+
+/*----------------------------------------------Main Header-------------------------------------*/
+
+#header{}
+#header hgroup{float:left; padding:20px 20px 20px 0;}
+#header hgroup h1, header hgroup h2{}
+#header hgroup h1{font-size:36px;}
+#header hgroup h2{font-size:13px;}
+
+/*----------------------------------------------Content Area-------------------------------------*/
+
+#container{padding-top:20px;}
+
+#container h1, #container h2, #container h3, #container h4, #container h5, #container h6{margin-bottom:20px;}
+
+#container .more{text-align:right;}
+
+/* ------Content-----*/
+
+#container #content{float:left; width:630px; margin-bottom:0;}
+
+#container section{margin:0 0 30px 0;}
+#container section.last{margin:0;}
+
+/* ------Comments-----*/
+
+#comments ul{margin:0 0 40px 0; padding:0; list-style:none;}
+#comments li.comment_odd, #comments li.comment_even{margin:0 0 10px 0; padding:15px; list-style:none;}
+#comments li.comment_odd{color:#666666; background-color:#F7F7F7;}
+#comments li.comment_odd a{color:#FF9900; background-color:#F7F7F7;}
+#comments li.comment_even{color:#666666; background-color:#E8E8E8;}
+#comments li.comment_even a{color:#FF9900; background-color:#E8E8E8;}
+#comments article, #comments header{display:block; width:100%;}
+#comments figure{float:right; margin:0 0 10px 10px; padding:3px; border:1px solid #DEDACB; text-align:center;}
+#comments figure img{float:inherit;}
+#comments header address{font-weight:bold;}
+#comments header time{font-size:smaller;}
+#comments article section{margin:0; padding:0;}
+#comments article section p{margin:10px 5px 10px 0; padding:0;}
+
+/* ------Right Column-----*/
+
+#container #right_column{float:right; width:300px;}
+aside h2{padding-bottom:8px; font-size:16px; text-transform:uppercase; border-bottom:5px solid #CCCCCC; text-align:right;}
+
+/*----------------------------------------------Footer-------------------------------------*/
+
+footer{}
+footer p{margin:0; padding:20px 0;}
