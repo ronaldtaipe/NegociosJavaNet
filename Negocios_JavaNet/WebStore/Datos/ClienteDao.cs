@@ -6,6 +6,8 @@ using System.Configuration;
 using System.Data.Common;
 using System.Data;
 
+using WebStore.Entidades;
+
 
 namespace WebStore.Datos
 {
@@ -62,7 +64,6 @@ namespace WebStore.Datos
             return Id;
         }
 
-
         public int InsertarCliente(string Dni, string Nombres, string Apellidos, string Email, string Direccion, string Celular, string Contrasena, int Estado)
         {
             List<DbParameter> parametros = new List<DbParameter>();
@@ -109,6 +110,100 @@ namespace WebStore.Datos
 
             return ejecutaNonQuery("grabacliente", parametros);
         }
+
+        public int IniciaSesion(string correo, string contrasena)
+        {
+            List<DbParameter> parametros = new List<DbParameter>();
+
+            DbParameter param1 = dpf.CreateParameter();
+            param1.Value = correo;
+            param1.ParameterName = "correo";
+            parametros.Add(param1);
+
+            DbParameter param2 = dpf.CreateParameter();
+            param2.Value = contrasena;
+            param2.ParameterName = "contrasena";
+            parametros.Add(param2);
+
+            return ejecutaNonQuery("iniciasesion", parametros);
+        }
+
+        public Cliente devuelveCliente(string correo, string contrasena)
+        {
+            Cliente cliente = new Cliente();
+            string storedprocedure = "iniciasesion";
+            using (DbConnection con= dpf.CreateConnection())
+            {
+                con.ConnectionString = constr;
+                using (DbCommand cmd = dpf.CreateCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandText = storedprocedure;
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    DbParameter paramCorreo = cmd.CreateParameter();
+                    paramCorreo.DbType = DbType.String;
+                    paramCorreo.ParameterName = "correo";
+                    paramCorreo.Value = correo;
+
+                    DbParameter paramContrasena = cmd.CreateParameter();
+                    paramContrasena.DbType = DbType.String;
+                    paramContrasena.ParameterName = "contrasena";
+                    paramContrasena.Value = contrasena;
+
+                    cmd.Parameters.Add(paramCorreo);
+                    cmd.Parameters.Add(paramContrasena);
+
+                    con.Open();
+
+                    using (DbDataReader dr = cmd.ExecuteReader())
+                    {
+                        if (dr.Read())
+                        {
+                            cliente = new Cliente( (string)dr["dni"], (string)dr["nombres"] );
+                        }
+                    }
+                }
+            }
+            return cliente;
+        }
+
+        public Cliente devuelveClienteporDni(string dni)
+        {
+            Cliente cliente = new Cliente();
+            string storedprocedure = "datosclientepordni";
+            using (DbConnection con = dpf.CreateConnection())
+            {
+                con.ConnectionString = constr;
+                using (DbCommand cmd = dpf.CreateCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandText = storedprocedure;
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    DbParameter param = cmd.CreateParameter();
+                    param.DbType = DbType.String;
+                    param.ParameterName = "dni";
+                    param.Value = dni;
+                    cmd.Parameters.Add(param);
+                    con.Open();
+                    using (DbDataReader dr = cmd.ExecuteReader())
+                    {
+                        if (dr.Read())
+                        {
+                            cliente = new Cliente(
+                                (string)dr["dni"],
+                                (string)dr["nombres"],
+                                (string)dr["apellidos"],
+                                (string)dr["direccion"],
+                                (string)dr["celular"]
+                                );
+                        }
+                    }
+                }
+            }
+            return cliente;
+        }
+
+
     
     
     }

@@ -9,11 +9,18 @@ import pe.reniec.webpersona.modelo.Persona;
 public class PersonaNegocio {
 
 	
-	public String ValidarInfoNegocio (String dni) throws DAOExcepcion
+	public Collection<Persona> ValidarInfoNegocio (String dni) throws DAOExcepcion
 	{
 		System.out.println("negocio");
 		dao Objdao= new dao();
 		return  Objdao.ValidarInfo(dni);
 		//return lstPersona;
-	}	
+	}
+//	public String ValidarInfoNegocio (String dni) throws DAOExcepcion
+//	{
+//		System.out.println("negocio");
+//		dao Objdao= new dao();
+//		return  Objdao.ValidarInfo(dni);
+//		//return lstPersona;
+//	}	
 }

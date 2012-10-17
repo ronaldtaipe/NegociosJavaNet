@@ -27,11 +27,18 @@ namespace WebStore.serviciosrping {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Web.Services.WebServiceBindingAttribute(Name="PersonaServiceImplServiceSoapBinding", Namespace="http://service.webpersona.reniec.pe/")]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(validaPersonaInfoTest))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(validaPersonaResponse))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(validaPersona))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(validaPersonaInfoResponse))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(validaPersonaInfo))]
     public partial class PersonaServiceImplService : System.Web.Services.Protocols.SoapHttpClientProtocol {
         
         private System.Threading.SendOrPostCallback validaPersonaInfoOperationCompleted;
         
         private System.Threading.SendOrPostCallback validaPersonaOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback validaPersonaInfoTestOperationCompleted;
         
         private bool useDefaultCredentialsSetExplicitly;
         
@@ -78,12 +85,15 @@ namespace WebStore.serviciosrping {
         public event validaPersonaCompletedEventHandler validaPersonaCompleted;
         
         /// <remarks/>
+        public event validaPersonaInfoTestCompletedEventHandler validaPersonaInfoTestCompleted;
+        
+        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("", RequestNamespace="http://service.webpersona.reniec.pe/", ResponseNamespace="http://service.webpersona.reniec.pe/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         [return: System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public persona[] validaPersonaInfo([System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)] string dni) {
+        public persona validaPersonaInfo([System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)] string dni) {
             object[] results = this.Invoke("validaPersonaInfo", new object[] {
                         dni});
-            return ((persona[])(results[0]));
+            return ((persona)(results[0]));
         }
         
         /// <remarks/>
@@ -134,6 +144,36 @@ namespace WebStore.serviciosrping {
             if ((this.validaPersonaCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.validaPersonaCompleted(this, new validaPersonaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("", RequestNamespace="http://service.webpersona.reniec.pe/", ResponseNamespace="http://service.webpersona.reniec.pe/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public object[] validaPersonaInfoTest([System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)] string dni) {
+            object[] results = this.Invoke("validaPersonaInfoTest", new object[] {
+                        dni});
+            return ((object[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void validaPersonaInfoTestAsync(string dni) {
+            this.validaPersonaInfoTestAsync(dni, null);
+        }
+        
+        /// <remarks/>
+        public void validaPersonaInfoTestAsync(string dni, object userState) {
+            if ((this.validaPersonaInfoTestOperationCompleted == null)) {
+                this.validaPersonaInfoTestOperationCompleted = new System.Threading.SendOrPostCallback(this.OnvalidaPersonaInfoTestOperationCompleted);
+            }
+            this.InvokeAsync("validaPersonaInfoTest", new object[] {
+                        dni}, this.validaPersonaInfoTestOperationCompleted, userState);
+        }
+        
+        private void OnvalidaPersonaInfoTestOperationCompleted(object arg) {
+            if ((this.validaPersonaInfoTestCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.validaPersonaInfoTestCompleted(this, new validaPersonaInfoTestCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -243,6 +283,116 @@ namespace WebStore.serviciosrping {
         }
     }
     
+    /// <comentarios/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.233")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://service.webpersona.reniec.pe/")]
+    public partial class validaPersonaInfoTest {
+        
+        private string dniField;
+        
+        /// <comentarios/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string dni {
+            get {
+                return this.dniField;
+            }
+            set {
+                this.dniField = value;
+            }
+        }
+    }
+    
+    /// <comentarios/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.233")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://service.webpersona.reniec.pe/")]
+    public partial class validaPersonaResponse {
+        
+        private string returnField;
+        
+        /// <comentarios/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string @return {
+            get {
+                return this.returnField;
+            }
+            set {
+                this.returnField = value;
+            }
+        }
+    }
+    
+    /// <comentarios/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.233")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://service.webpersona.reniec.pe/")]
+    public partial class validaPersona {
+        
+        private string dniField;
+        
+        /// <comentarios/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string dni {
+            get {
+                return this.dniField;
+            }
+            set {
+                this.dniField = value;
+            }
+        }
+    }
+    
+    /// <comentarios/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.233")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://service.webpersona.reniec.pe/")]
+    public partial class validaPersonaInfoResponse {
+        
+        private persona returnField;
+        
+        /// <comentarios/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public persona @return {
+            get {
+                return this.returnField;
+            }
+            set {
+                this.returnField = value;
+            }
+        }
+    }
+    
+    /// <comentarios/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.233")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://service.webpersona.reniec.pe/")]
+    public partial class validaPersonaInfo {
+        
+        private string dniField;
+        
+        /// <comentarios/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string dni {
+            get {
+                return this.dniField;
+            }
+            set {
+                this.dniField = value;
+            }
+        }
+    }
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.1")]
     public delegate void validaPersonaInfoCompletedEventHandler(object sender, validaPersonaInfoCompletedEventArgs e);
@@ -261,10 +411,10 @@ namespace WebStore.serviciosrping {
         }
         
         /// <remarks/>
-        public persona[] Result {
+        public persona Result {
             get {
                 this.RaiseExceptionIfNecessary();
-                return ((persona[])(this.results[0]));
+                return ((persona)(this.results[0]));
             }
         }
     }
@@ -291,6 +441,32 @@ namespace WebStore.serviciosrping {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.1")]
+    public delegate void validaPersonaInfoTestCompletedEventHandler(object sender, validaPersonaInfoTestCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.1")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class validaPersonaInfoTestCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal validaPersonaInfoTestCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public object[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((object[])(this.results[0]));
             }
         }
     }

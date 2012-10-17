@@ -14,14 +14,14 @@
     <tr>
         <td>Correo</td>
         <td>
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtCorreo" runat="server"></asp:TextBox>
         </td>
 
     </tr>
     <tr>
         <td>Password</td>
         <td>
-            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtContrasena" runat="server"></asp:TextBox>
         </td>
 
     </tr>
@@ -29,11 +29,18 @@
         <td></td>
         <td>
            
-            <asp:Button ID="btnlogin" runat="server" Text="Ingresar" />
-            <asp:Button ID="btncanlogin" runat="server" Text="Cancelar" 
+            <asp:Button ID="btnAceptar" runat="server" Text="Ingresar" 
+                onclick="btnAceptar_Click" />
+            <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" 
                 onclick="btncanlogin_Click" />
            
         </td>
+
+    </tr>
+     <tr>
+        <td colspan="2">
+                <asp:Label ID="lblResultado" runat="server" Width="279px" ForeColor="#0000CC" 
+                    Font-Size="Small" style="text-align: left"></asp:Label></td>
 
     </tr>
    </table>
@@ -45,5 +52,5 @@
   </section>
     </div>
 </div>
-    <%--Copiar esta parte para que quede centrado--%>
+<%--Copiar esta parte para que quede centrado--%>
 </asp:Content>

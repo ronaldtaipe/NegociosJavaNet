@@ -13,6 +13,18 @@ namespace WebStore
         {  
 
         }
+
+        protected void btnVerDetalle_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DetalleArticulo.aspx");
+        }
+
+        protected void btnDetalleArticulo1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DetalleArticulo1.aspx");
+        }
+
+        
     }
 
 

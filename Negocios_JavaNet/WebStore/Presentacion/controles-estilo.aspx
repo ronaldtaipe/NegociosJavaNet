@@ -16,7 +16,9 @@
       <!-- ########################################################################################## -->
       <section>
         <h1>&lt;h1&gt; to &lt;h6&gt; - Headline Colour and Size Are All The Same</h1>
-        <figure class="imgr"><img src="images/demo/imgr.gif" alt="" width="125" height="125"></figure>
+        <figure class="imgr">
+            <img src="images/demo/imgr.gif" alt="" width="125" height="125">
+        </figure>
         <p>Aliquatjusto quisque nam consequat doloreet vest orna partur scetur portortis nam. Metadipiscing eget facilis elit sagittis felisi eger id justo maurisus convallicitur.</p>
         <p>Dapiensociis <a href="#">temper donec auctortortis cumsan</a> et curabitur condis lorem loborttis leo. Ipsumcommodo libero nunc at in velis tincidunt pellentum tincidunt vel lorem.</p>
         <figure class="imgl"><img src="images/demo/imgl.gif" alt="" width="125" height="125"></figure>

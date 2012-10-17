@@ -50,6 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Presentacion\Catalogo.aspx" />
+    <Content Include="Presentacion\DetalleArticulo.aspx" />
+    <Content Include="Presentacion\DetalleArticulo1.aspx" />
     <Content Include="Presentacion\controles-estilo.aspx" />
     <Content Include="Presentacion\images\articulos\1.jpg" />
     <Content Include="Presentacion\images\articulos\2.jpg" />
@@ -89,6 +91,7 @@
     <Content Include="Presentacion\Login.aspx" />
     <Content Include="Presentacion\Marcas.aspx" />
     <Content Include="Presentacion\Ofertas.aspx" />
+    <Content Include="Presentacion\PagoProducto.aspx" />
     <Content Include="Presentacion\Proveedores.aspx" />
     <Content Include="Presentacion\RegistrarCliente.aspx" />
     <Content Include="Presentacion\scripts\html5shiv.js" />
@@ -115,6 +118,7 @@
   <ItemGroup>
     <Compile Include="Datos\ClienteDao.cs" />
     <Compile Include="Entidades\Cliente.cs" />
+    <Compile Include="Entidades\ClienteInfocorp.cs" />
     <Compile Include="Negocio\ClienteBE.cs" />
     <Compile Include="Presentacion\Catalogo.aspx.cs">
       <DependentUpon>Catalogo.aspx</DependentUpon>
@@ -122,6 +126,20 @@
     </Compile>
     <Compile Include="Presentacion\Catalogo.aspx.designer.cs">
       <DependentUpon>Catalogo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\DetalleArticulo.aspx.cs">
+      <DependentUpon>DetalleArticulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\DetalleArticulo.aspx.designer.cs">
+      <DependentUpon>DetalleArticulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\DetalleArticulo1.aspx.cs">
+      <DependentUpon>DetalleArticulo1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\DetalleArticulo1.aspx.designer.cs">
+      <DependentUpon>DetalleArticulo1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\controles-estilo.aspx.cs">
       <DependentUpon>controles-estilo.aspx</DependentUpon>
@@ -165,6 +183,13 @@
     <Compile Include="Presentacion\Ofertas.aspx.designer.cs">
       <DependentUpon>Ofertas.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\PagoProducto.aspx.cs">
+      <DependentUpon>PagoProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\PagoProducto.aspx.designer.cs">
+      <DependentUpon>PagoProducto.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -205,6 +230,9 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\serviciosrping\persona1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\serviciosrping\PersonaServiceImplService.wsdl" />
     <None Include="Web References\serviciosrping\Reference.map">

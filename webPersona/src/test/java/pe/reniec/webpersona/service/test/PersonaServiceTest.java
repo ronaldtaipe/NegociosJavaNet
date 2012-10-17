@@ -27,15 +27,30 @@ public class PersonaServiceTest {
 	@Test
 	public void testPersonaService() throws DAOExcepcion
 	{
-		PersonaNegocio neg=new  PersonaNegocio();
+		//PersonaNegocio neg=new  PersonaNegocio();
 		System.out.println("123");
-		String lst=personaService.validaPersonaInfo("43873985");
+		//String lst=personaService.validaPersonaInfo("438739825");
+		Collection<Persona> lst=personaService.validaPersonaInfoTest("438739825");
+		for (Persona obj : lst) {
+			System.out.println(obj.getNombres());
+		}
+		System.out.println(lst.size());
+		Assert.assertTrue(lst.size()>0);
 		
-		//lst=neg.ValidarInfoNegocio("43873938"); //personaService.validaPersonaInfo("43873985");
-		//String valor=personaService.validaPersona("43873985");
-		//System.out.println(valor);
-		//Assert.assertTrue(lst.size()>0);
-		System.out.println(lst);
-		//Assert.assertEquals("1",valor);
+
 	}
+//	@Test
+//	public void testPersonaService() throws DAOExcepcion
+//	{
+//		PersonaNegocio neg=new  PersonaNegocio();
+//		System.out.println("123");
+//		String lst=personaService.validaPersonaInfo("43873985");
+//		
+//		//lst=neg.ValidarInfoNegocio("43873938"); //personaService.validaPersonaInfo("43873985");
+//		//String valor=personaService.validaPersona("43873985");
+//		//System.out.println(valor);
+//		//Assert.assertTrue(lst.size()>0);
+//		//System.out.println(lst);
+//		//Assert.assertEquals("1",valor);
+//	}
 }

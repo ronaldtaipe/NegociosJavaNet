@@ -19,19 +19,31 @@
         procesador Intel Core i3-2350M (2.30 GHz, 3M Cache) , memoria 4 GB ,discoduro 750 GB SATA , óptico DVD Supermulti, WLAN 802.11b/g/n, c.
         <br /><strong>S/. 1,948.00</strong>
         </p>
-        <p class="more"><a href="#">Leer Más &raquo;</a></p>
+        <p class="more">
+            <asp:Button ID="btnDetalleArticulo1" runat="server" 
+                Text="Leer Más &raquo;" BackColor="White" BorderColor="#FFFFCC" 
+                BorderWidth="0px" Font-Bold="False" 
+        Font-Size="Small" ForeColor="#FF9900" onclick="btnDetalleArticulo1_Click" ></asp:Button></p>
       </article>
       <article>
         <figure><img src="images/articulos/2.jpg" width="160" height="160" alt=""></figure>
         <strong>MEMORIA USB MODELO ANGRY BIRD</strong>
-        <p>MEMORIA USB 8GB - MODELO ANGRY BIRD, MANO MICKEY MOUSE, GUITARRA, LEGO, CAMARA, PATRICIO. <br /> <strong> S/. 49.00 </strong> </p>
-        <p class="more"><a href="#">Leer Más &raquo;</a></p>
+        <p>MEMORIA USB 8GB - MODELO ANGRY BIRD, MANO MICKEY MOUSE, GUITARRA, LEGO, CAMARA, PATRICIO. <br /> 
+        <strong> S/. <asp:Label ID="lblPrecioCatalogo" runat="server" Text="49.00"></asp:Label> </strong> </p>
+        <p class="more"><asp:Button ID="btnVerDetalle" runat="server" 
+                Text="Leer Más &raquo;" BackColor="White" BorderColor="#FFFFCC" 
+                BorderWidth="0px" Font-Bold="False" 
+        Font-Size="Small" ForeColor="#FF9900" onclick="btnVerDetalle_Click"></asp:Button></p>
       </article>
       <article class="last">
         <figure><img src="images/articulos/3.jpg" width="160" height="160" alt=""></figure>
         <strong>Tablet 7 pulgadas Flastar TP714A Android 4.0.3 ICS</strong>
         <p>Tablet de 7 pulgadas WVGA, Android 4.0.3 ICS, procesador Cortex A8 1.2GHz, GPU Mali 400MP, 512 RAM, 8GB memoria interna, cámara frontal videollamadas y HDMI.<br /> <strong>S/. 549.90</strong> </p>
-        <p class="more"><a href="#">Leer Más &raquo;</a></p>
+        <p class="more">
+            <asp:Button ID="btn" runat="server" 
+                Text="Leer Más &raquo;" BackColor="White" BorderColor="#FFFFCC" 
+                BorderWidth="0px" Font-Bold="False" 
+        Font-Size="Small" ForeColor="#FF9900" ></asp:Button></p>
       </article>
       <div class="spacer"></div>
       <article>

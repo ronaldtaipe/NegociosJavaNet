@@ -38,3 +38,13 @@ C:\SWSetup\Init\Net\NegociosJavaNet\Negocios_JavaNet\WebStore\obj\Debug\WebStore
 C:\SWSetup\Init\Net\NegociosJavaNet\Negocios_JavaNet\WebStore\bin\WebStore.dll
 C:\SWSetup\Init\Net\NegociosJavaNet\Negocios_JavaNet\WebStore\bin\WebStore.pdb
 C:\SWSetup\Init\Net\NegociosJavaNet\Negocios_JavaNet\WebStore\obj\Debug\WebStore.pdb
+C:\Users\PIER\Dropbox\DocumentosPier\DSD\Final\ronaldtaipe-NegociosJavaNet-3a43d36\Negocios_JavaNet\WebStore\bin\WebStore.dll
+C:\Users\PIER\Dropbox\DocumentosPier\DSD\Final\ronaldtaipe-NegociosJavaNet-3a43d36\Negocios_JavaNet\WebStore\bin\WebStore.pdb
+C:\Users\PIER\Dropbox\DocumentosPier\DSD\Final\ronaldtaipe-NegociosJavaNet-3a43d36\Negocios_JavaNet\WebStore\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\PIER\Dropbox\DocumentosPier\DSD\Final\ronaldtaipe-NegociosJavaNet-3a43d36\Negocios_JavaNet\WebStore\obj\Debug\WebStore.dll
+C:\Users\PIER\Dropbox\DocumentosPier\DSD\Final\ronaldtaipe-NegociosJavaNet-3a43d36\Negocios_JavaNet\WebStore\obj\Debug\WebStore.pdb
+C:\SWSetup\Init\Net\ronaldtaipe-NegociosJavaNet-3a43d36\Negocios_JavaNet\WebStore\obj\Debug\ResolveAssemblyReference.cache
+C:\SWSetup\Init\Net\ronaldtaipe-NegociosJavaNet-3a43d36\Negocios_JavaNet\WebStore\bin\WebStore.dll
+C:\SWSetup\Init\Net\ronaldtaipe-NegociosJavaNet-3a43d36\Negocios_JavaNet\WebStore\bin\WebStore.pdb
+C:\SWSetup\Init\Net\ronaldtaipe-NegociosJavaNet-3a43d36\Negocios_JavaNet\WebStore\obj\Debug\WebStore.dll
+C:\SWSetup\Init\Net\ronaldtaipe-NegociosJavaNet-3a43d36\Negocios_JavaNet\WebStore\obj\Debug\WebStore.pdb

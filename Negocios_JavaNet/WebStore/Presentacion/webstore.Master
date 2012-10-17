@@ -5,8 +5,7 @@
 <head runat="server">
     <title>Web Store - JavaNet</title>
     <asp:ContentPlaceHolder ID="head" runat="server"> </asp:ContentPlaceHolder>
-    <meta charset="iso-8859-1">
-    
+    <meta charset="iso-8859-1">    
     <link href="~/Presentacion/styles/layout.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="scripts/jquery.1.5.1.min.js"></script>
     <script type="text/javascript" src="scripts/slides.min.jquery.js"></script>
@@ -19,11 +18,12 @@
         </div>
       <!-------------- Título y Menú de Opciones -------------->
         <div class="wrapper row1">
-          <header id="header" class="clear">
-            <hgroup>
-            <h2><a href="index.aspx">WebStore</a></h2>
-            <h2>JavaNet</h2>
-            </hgroup>
+          <header id="header" class="clear">            
+            <h1><a href="index.aspx">WebStore JavaNet</a></h1> <br />
+            <div style="text-align: right">
+                <asp:Label ID="lblDniClienteGlobal" runat="server" Text="Dni"></asp:Label><strong> Bienvenido </strong>
+                <asp:Label ID="lblNombresClienteGlobal" runat="server" Text="Usuario"></asp:Label>
+            </div>
             <nav>
               <ul>
              <li><a href="Login.aspx">Iniciar Sesión</a><span>Iniciar Sesión</span></li>

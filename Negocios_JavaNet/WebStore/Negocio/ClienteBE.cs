@@ -13,7 +13,6 @@ namespace WebStore.Negocio
 
         public ClienteBE()
         {
-
         }
 
         public int GrabarCliente(string Dni, string Nombres, string Apellidos, string Email, string Direccion, string Celular, string Contrasena, int Estado)
@@ -21,6 +20,19 @@ namespace WebStore.Negocio
             ClienteDao clientedao = new ClienteDao();
             return clientedao.InsertarCliente(Dni, Nombres, Apellidos, Email, Direccion, Celular, Contrasena, Estado);
         }
+
+        public Cliente obtieneDniNombresCliente(string Correo, string Contrasena)
+        {
+            ClienteDao clientedao = new ClienteDao();
+            return clientedao.devuelveCliente(Correo, Contrasena);
+        }
+
+        public Cliente obtieneDatosCliente(string dni)
+        {
+            ClienteDao clientedao = new ClienteDao();
+            return clientedao.devuelveClienteporDni(dni);
+        }
+
 
     }
 }

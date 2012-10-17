@@ -21,14 +21,14 @@ public class User {
 
 	private String estadoCivil;
 	
-	private String deuda;
+	private Double deuda;
 
 	public User() {
 	}
 
 	public User(String dni, String primerApellido, String segundoApellido,
 			String nombres, String fechaNacimiento, String ubigeo, String sexo,
-			String estadoCivil, String deuda) {
+			String estadoCivil, Double deuda) {
 		super();
 		this.dni = dni;
 		this.primerApellido = primerApellido;
@@ -108,11 +108,11 @@ public class User {
 
 
 
-	public String getDeuda() {
+	public Double getDeuda() {
 		return deuda;
 	}
 
-	public void setDeuda(String deuda) {
+	public void setDeuda(Double deuda) {
 		this.deuda = deuda;
 	}
 

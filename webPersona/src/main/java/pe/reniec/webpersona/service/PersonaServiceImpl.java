@@ -1,6 +1,8 @@
 package pe.reniec.webpersona.service;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 import javax.jws.WebParam;
 import javax.jws.WebService;
@@ -32,23 +34,54 @@ public class PersonaServiceImpl implements PersonaService {
 		return String.valueOf(valor);	
 	}
 	
-	
-	public String validaPersonaInfo(@WebParam(name = "dni") String dni)
-	{
-		PersonaNegocio objNegocio=new PersonaNegocio();
-		String lst = null;
-		try
-		{
+	public Persona validaPersonaInfo(@WebParam(name = "dni") String dni) {
+		PersonaNegocio objNegocio = new PersonaNegocio();
+		Collection lst = null;
+		try {
 			System.out.println("implemen");
 			lst = objNegocio.ValidarInfoNegocio(dni);
-			///System.out.println(lst.size());
+			ArrayList<Persona> lPersona = (ArrayList<Persona>) lst; 
+			Persona lTarea = new Persona();
+			for(int i = 0;i < lPersona.size(); i++){
+				lTarea = (Persona)lPersona.get(i);;
+			}
+			return lTarea;
+		} catch (DAOExcepcion e) {
+			e.printStackTrace();
+			return null;
 		}
-		catch (DAOExcepcion e) 
-		{
+	}
+	
+	//public Collection<Persona> validaPersonaInfoTest(String dni) {
+	public List validaPersonaInfoTest(String dni) {
+		PersonaNegocio objNegocio = new PersonaNegocio();
+		Collection lst = null;
+		try {
+			System.out.println("implemen");
+			lst = objNegocio.ValidarInfoNegocio(dni);
+			// return objNegocio.ValidarInfoNegocio(dni);
+			// /System.out.println(lst.size());
+		} catch (DAOExcepcion e) {
 			e.printStackTrace();
 		}
-		return lst;	
+		return (List) lst;
 	}
+//	public String validaPersonaInfo(@WebParam(name = "dni") String dni)
+//	{
+//		PersonaNegocio objNegocio=new PersonaNegocio();
+//		String lst = null;
+//		try
+//		{
+//			System.out.println("implemen");
+//			lst = objNegocio.ValidarInfoNegocio(dni);
+//			///System.out.println(lst.size());
+//		}
+//		catch (DAOExcepcion e) 
+//		{
+//			e.printStackTrace();
+//		}
+//		return lst;	
+//	}
 //	public String validaPersonaInfo(@WebParam(name = "dni") String dni) {
 //		if(dni.equals("25723525")){
 //			return "Jose Amadeo Martin;Diaz Diaz;985745874;Av. Monterrico 452";

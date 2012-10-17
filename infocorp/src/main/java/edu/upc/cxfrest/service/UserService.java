@@ -27,7 +27,8 @@ public interface UserService {
 	public UserCollection getUsers();
 
 	@GET
-	@Path("/user/{dni}")
+	@Path("/user/{dni}") // Se agregó la opción de obtener la información en JSon "@Produces({ "application/json" })"
+	@Produces({ "application/json" })
 	public User getUser(@PathParam("dni") String dni);
 
 	@GET
@@ -38,14 +39,14 @@ public interface UserService {
 	@Path("/new")
 	@Produces(MediaType.TEXT_HTML)
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-	public void newUser(@FormParam("dni") String dni,
+	public void newUser(
+			@FormParam("dni") String dni,
 			@FormParam("nombres") String nombres,
 			@FormParam("primerApellido") String primerApellido,
 			@FormParam("segundoApellido") String segundoApellido,
 			@FormParam("fechaNacimiento") String fechaNacimiento,
 			@FormParam("ubigeo") String ubigeo, @FormParam("sexo") String sexo,
 			@FormParam("estadoCivil") String estadoCivil,
-			@FormParam("deuda") String deuda,
+			@FormParam("deuda") Double deuda,
 			@Context HttpServletResponse servletResponse) throws IOException;
-
 }
