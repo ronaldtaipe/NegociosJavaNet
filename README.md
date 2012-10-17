@@ -1,8 +1,8 @@
 "README"
 
-ralitechpe.blogspot.com/
+http://ralitechpe.blogspot.com/
 
-danielzs75.blogspot.com
+http://danielzs75.blogspot.com
 
 http://ronaldtaipe.blogspot.com/
 
