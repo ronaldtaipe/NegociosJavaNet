@@ -37,9 +37,9 @@ CREATE TABLE Cliente
 GO 
 
 Insert into cliente  values('43873938','Jeanpierre','Cajo Hernandez','jcajo@gmail.com','Las rosas 175','999999999','123','1')
-Insert into cliente  values('42178733','Ronald David','Taipe Aylas','ronaldtaipe@gmail.com','Av. Alfredo Mendiola 2139 dpto 201 - Urb. EL Trebol','992794533','123','1')
+Insert into cliente  values('42178733','Ronald','Tapia','liontapia@hotmail.com','Av. Fresnos 576 Urb. Gardenias','999999999','123','1')
 Insert into cliente  values('40136711','Raul', 'Alva','ralva@gmail.com','Las golondrinas 278','999999999','123','1')
-Insert into cliente  values('20202020','Daniel','Zelaya','dzelaya@gmail.com','av. izaguirre 2345','999999999','123','1')
+Insert into cliente  values('20202020','Daniel','Zelaya','dzelaya@gmail.com','av. maldonado 2345','999999999','123','1')
 Insert into cliente  values('30303030','Ronald','Gates','rgates@gmail.com','av. rosa toro 897','999999999','123','1')
 
 CREATE TABLE Pedido 
